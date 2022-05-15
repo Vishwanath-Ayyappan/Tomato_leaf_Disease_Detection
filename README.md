@@ -15,6 +15,8 @@ Install the dependencies
 pip install torchvision
 ```
 > Note: `torch_version==1.10.0`, `pillow_version =8.3.0`, is used in this project
+> 
+Different version may give results but with some warnings.
 
 ## Dataset
 Datasets are required for all processes in the project. A data set with a strength of 9,801 images are collected from the repository of Plant village. Tomato diseases which are used as datasets are Bacterial spot, Early blight, Tomato yellow leaf curl virus, Septoria leaf spot, Tomato mosaic virus. The healthy leaf is also included as one of the classes in the five classes of disease. Datasets are divided into 80% for training and 20% for testing.
