@@ -104,14 +104,17 @@ At the first level, the model will classify between a healthy and unhealthy leaf
 
 
 Our Custom Model Output: a diseased leaf (Mosaic virus) is given as an input to the model. From the figure below, we can observe that even though we have given a leaf containing mosaic virus, the model predicted it as Septoria leaf spot. This is an incorrect prediction.
+
 <img width="436" alt="Screenshot 2022-05-15 at 12 56 24 PM" src="https://user-images.githubusercontent.com/85700873/168488452-10249582-b2fa-4022-a1e8-be359c9abdcc.png">
 
 
 VGG-19 Model Output: A healthy leaf is given as input to the model. From the figure below, we can observe that the model has correctly classified the image as a healthy one.
+
 <img width="320" alt="Screenshot 2022-05-15 at 12 56 14 PM" src="https://user-images.githubusercontent.com/85700873/168488456-fcd02588-cad7-435b-8d69-437605c16b8a.png">
 
 
 RESNET-50 Model Output: A diseased leaf (Bacterial spot) is given as an input. We can see that the model has classified it as a diseased leaf and also predicted it to which class it belongs to.
+
 <img width="261" alt="Screenshot 2022-05-15 at 12 55 59 PM" src="https://user-images.githubusercontent.com/85700873/168488457-80c9a397-e809-43db-bcb7-206c16adfc5f.png">
 
 #### Observations: 
