@@ -88,5 +88,31 @@ model_res = torch.load("90percentResnet")
 model_res.eval()
 ```
 
+## Results
+the models are tested on the test set and the accuracies are recorded. Also, the training loss and validation loss plot, Confusion matrix, and ROC curve for each of the three models are calculated to depict their performance.
+
+At the first level, the model will classify between a healthy and unhealthy leaf. If first- level classification results in an unhealthy leaf, the second level of classification will predict the type of disease among five diseases. After this, the model will also display details about the disease such as causes and symptoms and its treatments and control.
+<img width="478" alt="Screenshot 2022-05-15 at 12 44 12 PM" src="https://user-images.githubusercontent.com/85700873/168488418-4e7e9975-c6e7-4a5f-853f-49e495b70967.png">
+<img width="478" alt="Screenshot 2022-05-15 at 12 44 21 PM" src="https://user-images.githubusercontent.com/85700873/168488430-1908a3dd-417b-4a62-a640-19c08fcd473d.png">
+<img width="416" alt="Screenshot 2022-05-15 at 12 44 32 PM" src="https://user-images.githubusercontent.com/85700873/168488434-e7d84fa7-baca-4524-8390-9ed668e9ed75.png">
+
+<img width="416" alt="Screenshot 2022-05-15 at 12 49 19 PM" src="https://user-images.githubusercontent.com/85700873/168488443-023ac279-bdba-4c35-b488-ef0e994f90da.png">
+<img width="416" alt="Screenshot 2022-05-15 at 12 49 29 PM" src="https://user-images.githubusercontent.com/85700873/168488444-eff389ce-2144-4a9c-97de-179a3f61c957.png">
+<img width="416" alt="Screenshot 2022-05-15 at 12 49 37 PM" src="https://user-images.githubusercontent.com/85700873/168488446-07e7cd79-3d14-4a65-8faa-48bda48e4b95.png">
+RESNET-50 Model Output: A diseased leaf (Bacterial spot) is given as an input. We can see that the model has classified it as a diseased leaf and also predicted it to which class it belongs to.
+<img width="436" alt="Screenshot 2022-05-15 at 12 56 24 PM" src="https://user-images.githubusercontent.com/85700873/168488452-10249582-b2fa-4022-a1e8-be359c9abdcc.png">
+VGG-19 Model Output: A healthy leaf is given as input to the model. From the figure below, we can observe that the model has correctly classified the image as a healthy one.
+<img width="320" alt="Screenshot 2022-05-15 at 12 56 14 PM" src="https://user-images.githubusercontent.com/85700873/168488456-fcd02588-cad7-435b-8d69-437605c16b8a.png">
+Our Custom Model Output: a diseased leaf (Mosaic virus) is given as an input to the model. From the figure below, we can observe that even though we have given a leaf containing mosaic virus, the model predicted it as Septoria leaf spot. This is an incorrect prediction.
+<img width="261" alt="Screenshot 2022-05-15 at 12 55 59 PM" src="https://user-images.githubusercontent.com/85700873/168488457-80c9a397-e809-43db-bcb7-206c16adfc5f.png">
+
+#### Observations: 
+- it is clearly evident that the RESNET-50 Model Outperforms the other 2 models with ease.
+- VGG-19 performance is close to RESNET-50 model and it is way better than the model proposed by us
+- So the main reason our model performs like a random model is because of data imbalance, so because of this reason our model is not able to perform that well.
+- The Training time taken by RESNET-50 Model is 6 hours, the training time taken by VGG-19 Model is 5.5 hours and the training time taken by our model is 2 hours.
+- The state of the art algorithms take more time to train because the architecture is complex compared to our algorithm.
+
+
 ## Acknowledgment
 This project is done as part of the curriculum for Introduction to HPML course taught at NYU Tandon, Spring 2022 by Prof. Parijat Dube.
