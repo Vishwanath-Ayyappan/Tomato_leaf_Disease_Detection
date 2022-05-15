@@ -2,7 +2,10 @@
 ## Different Deep Learning models are trained for better results : Using Pytorch
 
 Tomato is the most widely used crop in India. So early detection of the diseases present will help the farmers and agriculturalists in significant ways. The ancient method of finding the diseases is visual observation, but this method is used very rarely, and we are in need of a more accurate and fast method This project briefs the detection of diseases present in a tomato leaf using Convolutional Neural Networks (CNNs) which is a class under deep neural networks. As an initial step, the dataset is segregated prior to the detection of tomato leaf. The concept of transfer learning is used where a pre-trained model (ResNet-50) is imported and adjusted according to our classification problem. To increase the quality of the ResNet model and to enhance the result as close to the actual prevailing disease, data augmentation has been implemented. Taking all these into consideration, a tomato leaf disease detection model has been developed using PyTorch that uses deep - CNNs. Finally, the testing dataset is processed for validation based on the learned parameters from the ResNet 50 model. Six most prevailing diseases in tomato crops have been taken for classification. Data augmentation has been introduced to increase the data set to 4 times the actual data and the model has shown an accuracy of 94.4%. We also applied the VGG 19 model and our own model to the tomato dataset and found that ResNet 50 outperforms the other two models. Finally a feature was added to the ResNet 50 model i.e. if the model predicts a leaf to be diseased then it will direct the user to the website where they can get to know about the description of the disease and cure for it.
-![68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a49624a465f366d52544d734739674c306a38757a35512e6a706567](https://user-images.githubusercontent.com/85700873/168486489-84145084-b39b-44f3-8911-bd1ba97429fb.jpeg)
+
+
+![agriengineering-03-00020-g004](https://user-images.githubusercontent.com/85700873/168486556-9e00432d-a7e6-4abc-b435-9659315ec291.jpeg)
+
 
 ## Installation
 
