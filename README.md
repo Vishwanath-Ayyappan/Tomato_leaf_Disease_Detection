@@ -89,4 +89,4 @@ model_res.eval()
 ```
 
 ## Acknowledgment
-This project is done as part of the curriculum for Introduction to HPML course taught at NYU Tandon , Spring 2022 by Prof. Parijat Dube.
+This project is done as part of the curriculum for Introduction to HPML course taught at NYU Tandon, Spring 2022 by Prof. Parijat Dube.
