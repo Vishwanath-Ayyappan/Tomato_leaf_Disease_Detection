@@ -23,7 +23,7 @@ Dataset is available in the following drive link
 
 | Dataset | Link |
 | ------ | ------ |
-| Google Drive | [][PlGd] |
+| Google Drive | [https://drive.google.com/drive/folders/1ee_VfiKzxOof5oz9eoDPr6VvbWl33qSL?usp=sharing][PlGd] |
 
 > Note: Store the data in the correct directory or load directly from your drive using the following command in Google colab 
 ```sh
